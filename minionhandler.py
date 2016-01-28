@@ -183,10 +183,10 @@ def DetectFailedMessages(message):
                                 f.close()
                                 print ("Exception raised")
                     else:
-                       #f = open(logfile, 'a')
-                       # f.write("Your host is not known ==> %s \n" % host )
+                       f = open(logfile, 'a')
+                       f.write("Your host is not known ==> %s \n" % host )
                        print ("Your host is not known ==> %s \n " % host)
-                       #f.close()
+                       f.close()
 
         print ("Alert from Minion "+locName+", Minion degraded!")
         endTime = datetime.datetime.now() + datetime.timedelta(minutes=1)
