@@ -1,0 +1,2 @@
+1.Allow Gmail API for the email
+2.Run the minionhandler.py
